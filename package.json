@@ -1,0 +1,16 @@
+{
+  "name": "Niramaya",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "git@github.com:ZhaAbhi/Niramaya.git",
+  "author": "jhabhishek.developer@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "start":"node server.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
+  }
+}
