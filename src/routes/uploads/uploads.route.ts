@@ -1,9 +1,8 @@
-import express,{Request, Response} from 'express';
+import express from 'express';
+import { fileUpload } from '../../controllers/uploads/uploads.controller';
 
-const uploadRouter  = express.Router();
+const uploadRouter = express.Router();
 
-uploadRouter.get('/upload', (req:Request, res: Response)=>{
-    res.send("Upload route")
-})
+uploadRouter.post('/upload', fileUpload);
 
-export default uploadRouter
+export default uploadRouter;
